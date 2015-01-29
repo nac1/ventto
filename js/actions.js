@@ -1,7 +1,7 @@
 var fn = {
     ready: function(){
-     //agregar al final
-         document.addEventListener('deviceready',fn.init,false);
+     //agregar al final 'deviceready'
+         document.addEventListener("deviceready",fn.init,false);
         
     },
     init: function(){   
