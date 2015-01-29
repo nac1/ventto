@@ -20,7 +20,7 @@ var contactos = {
         correos[0] = new ContactField('Work','fernando.g.galeatzi@gmail.com',true);
         
         var direccion=[];
-        direccion[0]=new contactFies('address','km 15.5 carretera federal Atlixco cp 74325',true);
+        direccion[0]=new ContactField('address','km 15.5 carretera federal Atlixco cp 74325',true);
   
         var contact = navigator.contacts.create();
         contact.displayName = 'Fernado';
