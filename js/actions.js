@@ -5,6 +5,7 @@ var fn = {
         
     },
     init: function(){   
+         alert('Contacto Guardado');
         $('#contact').tap(fn.agregar_contacto);
         
        // $('#regSend').click(fn.enviarRegistro);
