@@ -1,8 +1,10 @@
 var fn = {
     ready: function(){
-        document.addEventListener('deviceready',fn.init,false);
+     //agregar al final
+         document.addEventListener('deviceready',fn.init,false);
+        
     },
-    init: function(){
+    init: function(){   
         $('#contact').tap(fn.agregar_contacto);
         
        // $('#regSend').click(fn.enviarRegistro);
@@ -13,8 +15,7 @@ var fn = {
         /*if(!storage.estaRegistrado())
             window.location.href = '#reg';*/
     },
-    agregar_contacto:function{
-  alert();
+    agregar_contacto:function(){
     contactos.creado();
    }
 

@@ -1,33 +1,31 @@
 var contactos = {
    
-    creado: function(){
-        alert('Contacto ');
-        
+   creado: function(){
+        alert('Contacto Guardado');
+       
     },
-    /*error: function(err){
+    error: function(err){
         alert(err.code);
     },
     guardar: function(){
         //Nombre
         var nombre = new ContactName();
-        nombre.givenName = contactos.nombre;
-        nombre.familyName = 'Prueba';
+        nombre.givenName ='Fernado';
+        nombre.familyName = 'Fernando';
         //Teléfonos
         var telefonos = [];
-        telefonos[0] = new ContactField('home','1234567890',false);
-        telefonos[1] = new ContactField('mobile',contactos.telefono,true);
+        telefonos[0] =  new ContactField('mobile','222238389',true);
         //Correos
         var correos = [];
-        correos[0] = new ContactField('home',contactos.correo,true);
-        correos[1] = new ContactField('work','correo@trabajo.com',false);
-        
+        correos[0] = new ContactField('Work','fernando.g.galeatzi@gmail.com',true);
+  
         var contact = navigator.contacts.create();
-        contact.displayName = contactos.nombre;
-        contact.nickname = contactos.nombre;
+        contact.displayName = 'Fernado';
+        contact.nickname = 'Fernado';
         contact.name = nombre;
         contact.phoneNumbers = telefonos;
         contact.emails = correos;
         
         contact.save(contactos.creado,contactos.error);
-    }*/
+    }
 };
