@@ -1,3 +1,5 @@
+/*
+
 var fn = {
     ready: function(){
      //agregar al final 'deviceready'
@@ -15,7 +17,7 @@ var fn = {
         
         
         /*if(!storage.estaRegistrado())
-            window.location.href = '#reg';*/
+            window.location.href = '#reg';
     },
     agregar_contacto:function(){
     contactos.creado();
@@ -24,3 +26,13 @@ var fn = {
 };
 
 $(fn.ready);
+*/
+ function init() {
+   document.addEventListener("deviceready", onDeviceReady, false);
+ }
+
+ function onDeviceReady() {
+   alert('It works!');
+ }
+
+

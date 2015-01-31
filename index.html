@@ -12,13 +12,22 @@
     <script src="js/jquery.mobile-1.4.5.min.js"></script>
     <script src="js/API/gps.js"></script>
     <script  type="text/javascript" src="js/API/popimages.js"></script>
-    <script  type="text/javascript" src="js/actions.js"></script>
-    <script  type="text/javascript" src="js/contactos.js"></script>
    
+
+    <script type="text/javascript" charset="utf-8">
+  function init() {
+    document.addEventListener("deviceready", onDeviceReady, false);
+}
+function onDeviceReady() {
+    // Now safe to use the Cordova API
+    alert('hola');
+}
+    
+</script>
     
 </head>
 
-<body >
+<body  onload="init()">
     <!-- Pedir datos de usuario -->
 <div data-role="page" id="DUsuario">
 	<div data-role="header"><H1>Ventto</H1>
