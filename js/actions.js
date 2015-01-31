@@ -1,12 +1,12 @@
 var fn = {
     ready: function(){
      //agregar al final 'deviceready'
-         alert('Contacto Guardado');
-         document.addEventListener('click',fn.init,false);
+         alert('123');
+         document.addEventListener('deviceready',fn.init,false);
         
     },
     init: function(){   
-        
+        alert('1234');
         $('#contact').tap(fn.agregar_contacto);
         
        // $('#regSend').click(fn.enviarRegistro);
